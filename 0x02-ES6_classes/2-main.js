@@ -18,3 +18,9 @@ try {
 catch(err) {
 	    console.log(err);
 }
+try {
+	  const c2 = new HolbertonCourse("ES6", 34, ["Bob", "Jane", ["Max"]]);
+}
+catch(err) {
+	  console.log(err);
+}
