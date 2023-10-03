@@ -6,6 +6,9 @@ export default class HolbertonCourse {
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a number.');
     }
+    if (typeof students !== 'object') {
+      throw new TypeError('Students must be an array of strings.');
+    }
     for (const student of students) {
       if (typeof student !== 'string') {
         throw new TypeError('Students must be an array of strings.');
@@ -49,6 +52,9 @@ export default class HolbertonCourse {
 
   // Setter
   set students(students) {
+    if (typeof students !== 'object') {
+      throw new TypeError('Students must be an array of strings');
+    }
     for (const student of students) {
       if (typeof student !== 'string') {
         throw new TypeError('Students must be an array of strings');

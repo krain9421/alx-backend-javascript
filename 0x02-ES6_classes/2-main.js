@@ -19,7 +19,7 @@ catch(err) {
 	    console.log(err);
 }
 try {
-	  const c2 = new HolbertonCourse("ES6", 34, ["Bob", "Jane", ["Max"]]);
+	  const c2 = new HolbertonCourse("ES6", 34, "Bob");
 }
 catch(err) {
 	  console.log(err);
