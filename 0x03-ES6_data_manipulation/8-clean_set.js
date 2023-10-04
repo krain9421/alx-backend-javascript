@@ -1,10 +1,12 @@
 export default function cleanSet(set, startString) {
   let result = '';
+  const newSet = new Set(Array.from(set).filter((x) => x !== undefined));
 
-  if (startString === '') {
-    return startString;
+  if (typeof startString !== 'string' || startString === '') {
+    return result;
   }
-  for (const x of set) {
+
+  for (let x of newSet) {
     if (x.startsWith(startString)) {
       result += `${x.slice(startString.length)}-`;
     }
