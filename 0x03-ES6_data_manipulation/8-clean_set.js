@@ -6,7 +6,7 @@ export default function cleanSet(set, startString) {
     return result;
   }
 
-  for (let x of newSet) {
+  for (const x of newSet) {
     if (x.startsWith(startString)) {
       result += `${x.slice(startString.length)}-`;
     }
