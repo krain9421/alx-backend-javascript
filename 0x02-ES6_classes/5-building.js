@@ -5,14 +5,13 @@ export default class Building {
       this.evacuationWarningMessage();
     }
   }
- 
-  // Method to be overwritten
-  evacuationWarningMessage() {
-    throw new Error('Class extending Building must override evacuationWarningMessage');
-  }
 
   // Getter
   get sqft() {
     return this._sqft;
+  }
+
+  static evacuationWarningMessage() {
+    throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
