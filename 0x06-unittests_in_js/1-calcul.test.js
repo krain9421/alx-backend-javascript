@@ -14,7 +14,7 @@ describe("round test", function() {
     });
 
     it('Calculate type DIVIDE', function() {
-        assert.strictEqual(calculateNumber(DIV, 2.5, 0.5), 3);
+        assert.strictEqual(calculateNumber(DIV, 1.4, 4.5), 0.2);
     });
 
     it('Calcuate type Error', function() {
