@@ -10,10 +10,14 @@ function calculateNumber(type, a, b) {
         return rndA - rndB;
         break;
     case 'DIVIDE':
-      if (rndB == 0):
+      if (rndB == 0) {
         return 'Error';
-      else:
+	break;
+      }
+      else {
         return rndA / rndB;
+	break;
+      }
     default:
       return 'Error';
 }
